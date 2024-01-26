@@ -1,6 +1,7 @@
 To run the code :
 
 $ make
+
 $ bash compile.sh
 
 for compression:
@@ -16,4 +17,5 @@ for verification of lossless decompression:
 $ bash interface.sh V input_file decompressed_file
 
 For running on HPC run following first:
+
 $ module load compiler/gcc/9.1.0
