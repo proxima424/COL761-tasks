@@ -54,10 +54,8 @@ void compress_data(string file_path,string compressed_file_path){
         std::cerr << "Failed to open the file." << std::endl;
         return ;
     }
-    // store transactions from disk
-
-
-     // New: Divide into buckets based on transaction size
+   
+     //  Divide into buckets based on transaction size
     std::map<int, std::vector<Transaction>> size_buckets;
     
     while (std::getline(input_file, line)) {
@@ -93,7 +91,7 @@ void compress_data(string file_path,string compressed_file_path){
     input_file.close();
     
 
-    //vector<float> supports {1.0,0.8,0.75,0.6,0.4,0.35,0.3,0.25,0.2,0.125,0.1,0.09,0.08,0.075,0.05,0.025,0.02,0.01,0.005};
+
 
 
     
@@ -113,10 +111,6 @@ void compress_data(string file_path,string compressed_file_path){
         float step_one=0.1;
         float step_two=0.05;
         bool flag=true;
-
-        // bool flag2=true;
-        // float s3=0.0125;
-        // float s4=0.0075;
 
         auto start_time = std::chrono::high_resolution_clock::now();
         while   (start_threshold>0)    {
@@ -159,13 +153,7 @@ void compress_data(string file_path,string compressed_file_path){
                     start_threshold-=step_two;
                 }
             }else if (start_threshold>0.0125){
-                // if (flag2){
-                //     start_threshold-=s3;
-                //     flag2=false;
-                // }else{
-                //     flag2=true;
-                //     start_threshold-=s4;
-                // }
+               
                 start_threshold-=0.0125;
             }else{
                 start_threshold-=0.0005;
@@ -177,15 +165,16 @@ void compress_data(string file_path,string compressed_file_path){
     
     
     int final_items=0;
-    std::ofstream outFile; // Declare a file stream object
+    std::ofstream outFile; 
     outFile.open(compressed_file_path,std::ofstream::out | std::ofstream::trunc);
     if (!outFile.is_open()) {
         std::cerr << "Error opening file." << std::endl;
         return ;
     }
+    //Printing the dictionary first
     for(auto pair : compression_dict)
     {
-        outFile << pair.second << " ";
+        outFile << pair.second << " "; // label 
         final_items ++ ;
         for(auto ele : pair.first)
         {
