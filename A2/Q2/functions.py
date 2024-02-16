@@ -76,7 +76,7 @@ def process_subgraph_file(subgraph_file, top_k = 100):
             subgraphs.append(subgraph)
 
     # Sort subgraphs based on support
-    sorted_subgraphs = sorted(subgraphs, key=lambda x: int(x[1]), reverse=True)
+    sorted_subgraphs = sorted(subgraphs, key=lambda x: len(x), reverse=True)
 
     if len(sorted_subgraphs) < top_k:
         return sorted_subgraphs
