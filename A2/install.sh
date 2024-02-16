@@ -5,9 +5,6 @@ git clone repo
 folder="COL761-tasks"
 cd "$folder"
 
-file="A2_ee3200144.zip"
-unzip "$file"
-
 module load compiler/python/3.6.0/ucs4/gnu/447
 module load pythonpackages/3.6.0/matplotlib/3.0.2/gnu
 module load pythonpackages/3.6.0/numpy/1.16.1/gnu
