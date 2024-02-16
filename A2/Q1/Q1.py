@@ -84,30 +84,14 @@ if __name__ == "__main__":
         os.system(f"timeout 1h {present_directory}/gSpan-64 -s {support/100} -f {'input_other.txt'} -o -i")
         gspan.append((time.time()-t)/60)
         t = time.time()
-        os.system(f"timeout 1h {present_directory}/pafi-1.0.1/Linux/fsg -s {support} {'input_fsg.txt'}")
+        os.system(f"timeout 1h {present_directory}/pafi-1.0.1/fsg -s {support} {'input_fsg.txt'}")
         fsg.append((time.time()-t)/60)
         t = time.time()
         os.system(f"timeout 1h {present_directory}/gaston-1.1/gaston {(num_graphs*support)/100} {'input_other.txt'} ")
         gaston.append((time.time()-t)/60)
     print('Subgraphs process completed ')
 
-    # barWidth = 0.25
-    # fig = plt.subplots(figsize =(10, 8))
 
-    # br1 = [1, 2, 3]
-    # br2 = [x + barWidth for x in br1]
-    # br3 = [x + barWidth for x in br2]
-
-    # plt.bar(br1, gspan, color = 'y', width = barWidth, edgecolor = 'grey', label = 'gSpan')
-    # plt.bar(br2, fsg, color = 'g', width = barWidth, edgecolor = 'grey', label = 'FSG') 
-    # plt.bar(br3, gaston, color = 'c', width = barWidth, edgecolor = 'grey', label = 'Gaston') 
-
-    # plt.title('Performance Graph')
-    # plt.ylabel('Running Time (Minutes)')
-    # plt.xlabel('Minimum Support')
-    # plt.xticks([x for x in br2], [str(support) + "%" for support in supports])
-
-    # plt.legend()
 
     # Create the plot
     plt.figure(figsize=(10, 6))
