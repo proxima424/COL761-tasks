@@ -1,6 +1,6 @@
 #!/bin/bash
 git clone https://github.com/proxima424/COL761-tasks.git
-cd ./COl761/A2/
+cd ./A2/
 module load compiler/python/3.6.0/ucs4/gnu/447
 module load pythonpackages/3.6.0/matplotlib/3.0.2/gnu
 module load pythonpackages/3.6.0/numpy/1.16.1/gnu
