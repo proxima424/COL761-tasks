@@ -19,7 +19,7 @@ converted_file_path = "data_for_gspan.txt"
 order = convert_to_gspan_input(input_graph_file_path, converted_file_path)
 order_np = np.array(order)
 
-run_gspan(converted_file_path, 0.3)
+run_gspan(converted_file_path, 0.36)
 converted_subgraph_file_path = "data_for_gspan.txt.fp"
 
 top_subgraphs = process_subgraph_file(converted_subgraph_file_path, 100)
