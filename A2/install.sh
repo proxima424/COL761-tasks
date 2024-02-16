@@ -1,6 +1,5 @@
 #!/bin/bash
-repo="https://github.com/proxima424/COL761-tasks.git"
-git clone repo
+git clone https://github.com/proxima424/COL761-tasks.git
 
 folder="COL761-tasks"
 cd "$folder"
