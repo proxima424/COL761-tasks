@@ -1,1 +1,7 @@
-Assignment3
+To run Question 1
+./interface.sh 1
+
+To run Question 2 , part c
+./interface.sh 2 'c' 'path to dataset'
+
+Similar format for Q2, part (d)
