@@ -6,3 +6,8 @@ Contributions
  • Mohit Garg - 50%
  • Vanshita Garg - 50%
  • Darpit Rangari - 0%
+
+References 
+
+> https://pytorch-geometric.readthedocs.io/en/latest/get_started/colabs.html
+(used the colab notebook for link prediction and node classification code reference)
