@@ -16,6 +16,5 @@ else
     echo "Invalid command. Usage:"
     echo "bash interface.sh train </path/to/dataset> </path/to/output/model/in>"
     echo "bash interface.sh test <path/to/model> </path/to/test/dataset> </path/to/output/labels.txt>"
-    exit 1
-
+    exit 1
 fi
