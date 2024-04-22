@@ -1,1 +1,10 @@
 Link Prediction
+
+Results on LP_D1
+
+Epoch: 89, Loss: 0.1375, Train Acc:0.9537,Train AUC: 0.9900,Val Acc:0.8691, Val AUC: 0.9387
+
+Results on LP_D2
+
+Epoch: 48, Loss: 0.0310, Train Acc:0.9927,Train AUC: 0.9998,Val Acc:0.8871, Val AUC: 0.9529
+
