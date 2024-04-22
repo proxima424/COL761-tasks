@@ -1,1 +1,5 @@
 Node Classification
+
+
+Results on NC_D2
+Epoch: 92, Loss: 0.2680, Train Acc: 0.9218, Val Acc: 0.9062, Train AUC: 0.9901, Val AUC: 0.9869
