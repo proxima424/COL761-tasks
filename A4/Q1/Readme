@@ -1,1 +1,4 @@
 Graph Classification
+
+Epoch 50/50, Train Loss: 0.1092,Train Accuracy: 0.9749, Train ROC-AUC: 0.7864
+Epoch 50/50, Validation Accuracy: 0.9660, Validation ROC-AUC: 0.6788
